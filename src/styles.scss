@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pantalla{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+.fondo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+h1{
+    font-size: 46px;
+    text-align: center;
+    color: #ECCA6E;
+    margin-top:50px;
+}
+button{
+    height: 50px;
+    background-color: #ECCA6E;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0  5px inset #000;
+    font-size: 20px;
+    font-weight: bold;
+    transition: height .1s linear, width .2s linear, margin-top .1s linear;
+}
+button:focus , button:active{
+    
+    margin-top: 197px;
+    width: 285px;
+    height: 55px;
+}
+.iniciar-sesion{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+}
+.google-logo{
+    width: 40px;
+    margin: 0 10px;
+}
+
+nav{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+li{
+    color: #ECCA6E;
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    height: 30px;
+}
+a{
+    color: #ECCA6E;
+    margin: 10px 10px;
+}
